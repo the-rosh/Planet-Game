@@ -100,51 +100,6 @@ const directionalLight = new THREE.DirectionalLight(0x0000ff, 0.7); // Increased
 directionalLight.position.set(100, 100, 60);
 scene.add(directionalLight);
 
-
-
-
-
-// loader.load(citymodel,
-//     (gltf) => {
-//         console.log(gltf)
-//         const city = gltf.scene;
-//         scene.add(city);
-//         city.position.set(40, -20, -150);
-//         city.rotation.set(0, -45, 0);
-//         city.scale.set(0.9, 0.9, 0.9); // Adjust scale as needed
-//         startbtn.onclick = function changescene(){
-//     if (camera.position.z > -123) {
-//         camera.position.z -= 3;
-//         requestAnimationFrame(changescene);
-//     }
-
-//     function rotateani(){
-//         city.rotation.y += 0.000004;
-//         requestAnimationFrame(rotateani);
-//     }
-//     rotateani()
-
-//     // optbtn.onmouseover = function hovertochange() {
-//     //     console.log('hovered');
-//     //     if(city.position.x > -40) {
-//     //         city.position.x -= 2;
-
-
-//     //         requestAnimationFrame(hovertochange); // Rotate when hovered
-//     //     }else{
-//     //         console.log('else')
-//     //     } // Rotate when hovered
-//     // }
-// }        
-//     },
-//     undefined,
-//     (error) => {
-//         console.error('An error occurred loading the city model:', error);
-//     }
-// );
-
-
-
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth,window.innerHeight);
 document.getElementById('bgmodel').appendChild(renderer.domElement)
