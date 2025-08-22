@@ -12,10 +12,10 @@ let preloader = document.getElementById('preloader');
 const camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 0.1, 1000);
 const scene = new THREE.Scene();
 camera.position.z = 23
-let bgmodel = './model.glb';
+let bgmodel = './planet.glb';
 const loader = new GLTFLoader();
 
-loader.load('./space.glb',
+loader.load('./outerspace.glb',
     (spacemodel)=>{
         let space = spacemodel.scene
         scene.add(space);
